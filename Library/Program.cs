@@ -11,14 +11,11 @@ if (member.Active) {
     journal.Rent(member);
 };
 
-Console.WriteLine(textbook.Availiable);
+Console.WriteLine(textbook.Availiable); //false
 journal.Return(member);
-Console.WriteLine(journal.Availiable);
+Console.WriteLine(journal.Availiable); //true
 
-foreach(IRentable obj in member.rentedObjects)
-{
-    Console.WriteLine(obj);
-}
+Console.WriteLine(member.GetRentedPubs()); //1
 
 member.Active = false;
 

@@ -28,7 +28,7 @@ public abstract class Publication(string title, string author, string publisher,
     {
         if (!Availiable)
         {
-            Availiable = false;
+            Availiable = true;
             LastUpdate = DateTime.Now;
             member.rentedObjects.Remove(this);
         }

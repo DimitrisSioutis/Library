@@ -16,4 +16,9 @@ public class Member (string firstname, string lastname)
 
     public bool Active = true;
 
+    public int GetRentedPubs()
+    {
+        return rentedObjects.Count;
+    }
+
 }
