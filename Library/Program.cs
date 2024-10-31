@@ -1,11 +1,9 @@
 ﻿
 using Library.Models;
-using System.ComponentModel.Design;
 
 var journal = new Journal("Imerologio","Sioutis","Plaisio Publishing",true,1);
 var textbook = new TextBook("Titlos","Sioutis","Plaisio",true,"Sioutis");
-var member = new Member("Takis", "Takopoulos");
-
+var member = new Member("Takis", "Takoulis");
 
 
 if (member.Active) {
@@ -22,6 +20,7 @@ foreach(IRentable obj in member.rentedObjects)
     Console.WriteLine(obj);
 }
 
-member.Active = !member.Active;
+member.Active = false;
+
 
 
